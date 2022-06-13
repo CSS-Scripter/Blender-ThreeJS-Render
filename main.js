@@ -13,9 +13,8 @@ const scene = new Scene();
 const camera = new PerspectiveCamera(75, innerWidth / innerHeight, 1, 1000);
 
 const loader = new GLTFLoader();
-// const webFiles = 'https://lnmn.web-files.co/McyBipB95VGmLrDZq51yY.glb';
-const fileCoffee = 'https://file.coffee/u/McyBipB95VGmLrDZq51yY.glb';
-loader.load(fileCoffee,
+const modelUrl = 'https://lnmn.web-files.co/McyBipB95VGmLrDZq51yY.glb';
+loader.load(modelUrl,
   (gltf) => {
     scene.add(gltf.scene);
   }, ({ loaded, total }) => {
